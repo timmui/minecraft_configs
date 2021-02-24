@@ -24,6 +24,5 @@ services:
       GENERIC_PACK_STRIP_DIRS: "1"
       DISABLE_HEALTCHECK: "true"
     volumes:
-    # use a named, managed volume for data volume
     - /var/mc-rlcraft:/data
     - /var/modpacks:/modpacks:ro

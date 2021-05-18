@@ -11,7 +11,7 @@ services:
       EULA: "TRUE"
       # Set server type (vs the default of vanilla)
       TYPE: "FORGE"
-      MAX_MEMORY: "6G"
+      MAX_MEMORY: "4G"
       MAX_BUILD_HEIGHT: "300"
       VIEW_DISTANCE: "6"
       LEVEL_TYPE: "LARGEBIOMES"

@@ -1,0 +1,28 @@
+version: "3.7"
+
+services:
+  mc:
+    image: itzg/minecraft-server:2021.2.0-multiarch
+    ports:
+    # expose the Minecraft server port outside of container
+    - 25565:25565
+    environment:
+      # REQUIRED for all types
+      EULA: "TRUE"
+      # Set server type (vs the default of vanilla)
+      TYPE: "FORGE"
+      MAX_MEMORY: "6G"
+      MAX_BUILD_HEIGHT: "300"
+      VIEW_DISTANCE: "6"
+      LEVEL_TYPE: "LARGEBIOMES"
+      MAX_PLAYERS: "15"
+      CONSOLE: "false"
+      DIFFICULTY: "hard"
+      VERSION: "1.16.5"
+      FORGEVERSION: "14.23.5.2838"
+      GENERIC_PACK: "/modpacks/AllofFabric3Server-2.7.3.zip"
+      GENERIC_PACK_STRIP_DIRS: "1"
+      DISABLE_HEALTCHECK: "true"
+    volumes:
+    - /var/mc-aof3:/data
+    - /var/modpacks:/modpacks:ro

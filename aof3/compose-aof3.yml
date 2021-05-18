@@ -10,7 +10,7 @@ services:
       # REQUIRED for all types
       EULA: "TRUE"
       # Set server type (vs the default of vanilla)
-      TYPE: "FORGE"
+      TYPE: "FABRIC"
       MAX_MEMORY: "4G"
       MAX_BUILD_HEIGHT: "300"
       VIEW_DISTANCE: "6"
@@ -19,7 +19,6 @@ services:
       CONSOLE: "false"
       DIFFICULTY: "hard"
       VERSION: "1.16.5"
-      FORGEVERSION: "14.23.5.2838"
       GENERIC_PACK: "/modpacks/AllofFabric3Server-2.7.3.zip"
       GENERIC_PACK_STRIP_DIRS: "1"
       DISABLE_HEALTCHECK: "true"

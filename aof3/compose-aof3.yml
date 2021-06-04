@@ -11,7 +11,7 @@ services:
       EULA: "TRUE"
       # Set server type (vs the default of vanilla)
       TYPE: "CURSEFORGE"
-      CF_SERVER_MOD: "/modpacks/AllofFabric3Server-2.8.2.zip"
+      CF_SERVER_MOD: "/modpacks/AllofFabric3Server-2.8.1.zip"
       MAX_MEMORY: "4G"
       MAX_BUILD_HEIGHT: "300"
       VIEW_DISTANCE: "6"

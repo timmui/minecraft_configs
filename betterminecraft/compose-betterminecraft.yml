@@ -13,7 +13,6 @@ services:
       # Set server type (vs the default of vanilla)
       TYPE: "FORGE"
       FORGE_INSTALLER: "/modpacks/BetterMinecraftV28/forge-1.16.5-36.1.31-installer.jar"
-      FORGEVERSION: "36.1.62"
       MAX_MEMORY: "6G"
       MAX_BUILD_HEIGHT: "300"
       VIEW_DISTANCE: "6"

@@ -11,8 +11,8 @@ services:
       # REQUIRED for all types
       EULA: "TRUE"
       # Set server type (vs the default of vanilla)
-      TYPE: "CURSEFORGE"
-      CF_SERVER_MOD: "/modpacks/Better+Minecraft+Server+Pack+%5bFORGE%5d+v28.zip"
+      TYPE: "FORGE"
+      FORGE_INSTALLER: "/modpacks/Better+Minecraft+Server+Pack+%5bFORGE%5d+v28.zip"
       MAX_MEMORY: "6G"
       MAX_BUILD_HEIGHT: "300"
       VIEW_DISTANCE: "6"

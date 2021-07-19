@@ -3,7 +3,7 @@ version: "3.7"
 services:
   mc:
     # Java 8 required for this pack
-    image: itzg/minecraft-server:2021.17.0-java16
+    image: itzg/minecraft-server:2021.17.0-java8-multiarch
     ports:
     # expose the Minecraft server port outside of container
     - 25565:25565
@@ -11,8 +11,8 @@ services:
       # REQUIRED for all types
       EULA: "TRUE"
       # Set server type (vs the default of vanilla)
-      TYPE: "CURSEFORGE"
-      CF_SERVER_MOD: "/modpacks/Better+Minecraft+Server+Pack+%5bFABRIC%5d+v3.zip"
+      TYPE: "FORGE"
+      FORGE_INSTALLER: "/modpacks/BetterMinecraftV28/forge-1.16.5-36.1.31-installer.jar"
       MAX_MEMORY: "6G"
       MAX_BUILD_HEIGHT: "300"
       VIEW_DISTANCE: "6"
@@ -20,7 +20,7 @@ services:
       MAX_PLAYERS: "15"
       CONSOLE: "false"
       DIFFICULTY: "hard"
-      VERSION: "1.17"
+      VERSION: "1.16.5"
     volumes:
     - /var/mc-betterminecraft:/data
     - /var/modpacks:/modpacks:ro

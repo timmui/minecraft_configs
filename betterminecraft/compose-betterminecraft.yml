@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  mc:
+    # Java 8 required for this pack
+    image: itzg/minecraft-server:2021.17.0-java8-multiarch
+    ports:
+    # expose the Minecraft server port outside of container
+    - 25565:25565
+    environment:
+      # REQUIRED for all types
+      EULA: "TRUE"
+      # Set server type (vs the default of vanilla)
+      TYPE: "CURSEFORGE"
+      CF_SERVER_MOD: "/modpacks/Better+Minecraft+Server+Pack+%5bFORGE%5d+v28.zip"
+      MAX_MEMORY: "6G"
+      MAX_BUILD_HEIGHT: "300"
+      VIEW_DISTANCE: "6"
+      LEVEL_TYPE: "LARGEBIOMES"
+      MAX_PLAYERS: "15"
+      CONSOLE: "false"
+      DIFFICULTY: "hard"
+      VERSION: "1.16.5"
+    volumes:
+    - /var/mc-betterminecraft:/data
+    - /var/modpacks:/modpacks:ro

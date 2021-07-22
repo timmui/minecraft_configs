@@ -4,6 +4,7 @@ services:
   mc:
     # Java 8 required for this pack
     image: itzg/minecraft-server:2021.17.0-java8-multiarch
+    restart: always
     ports:
     # expose the Minecraft server port outside of container
     - 25565:25565

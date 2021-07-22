@@ -3,6 +3,7 @@ version: "3.7"
 services:
   mc:
     image: itzg/minecraft-server:2021.2.0-multiarch
+    restart: always
     ports:
     # expose the Minecraft server port outside of container
     - 25565:25565

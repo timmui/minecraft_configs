@@ -1,0 +1,38 @@
+
+# Minecraft Docker - Better Minecraft
+alias mcup="sudo docker-compose -f /home/tim/minecraft_configs/betterminecraft/compose-betterminecraft.yml up -d"
+alias mcdown="sudo docker-compose -f /home/tim/minecraft_configs/betterminecraft/compose-betterminecraft.yml down"
+alias mclogs='sudo docker logs --follow betterminecraft_mc_1'
+alias mcrcon='sudo docker exec -i betterminecraft_mc_1 rcon-cli'
+
+
+# Minecraft Docker - Better Minecraft
+alias mcup="sudo docker-compose -f /compose-betterminecraft.yml up -d"
+alias mcdown="sudo docker-compose -f /minecraft_configs/betterminecraft/compose-betterminecraft.yml down"
+alias mclogs='sudo docker logs --follow betterminecraft_mc_1'
+alias mcrcon='sudo docker exec -i betterminecraft_mc_1 rcon-cli'
+
+
+# Minecraft Docker - Better Minecraft
+alias mcup="sudo docker-compose -f /home/tim/code/minecraft_configs/compose-betterminecraft.yml up -d"
+alias mcdown="sudo docker-compose -f /home/tim/code/minecraft_configs/minecraft_configs/betterminecraft/compose-betterminecraft.yml down"
+alias mclogs='sudo docker logs --follow betterminecraft_mc_1'
+alias mcrcon='sudo docker exec -i betterminecraft_mc_1 rcon-cli'
+
+
+# -------- Minecraft Docker - betterminecraft --------
+alias mcup="sudo docker-compose -f /home/tim/code/minecraft_configs/compose-betterminecraft.yml up -d"
+alias mcdown="sudo docker-compose -f /home/tim/code/minecraft_configs/minecraft_configs/betterminecraft/compose-betterminecraft.yml down"
+alias mclogs='sudo docker logs --follow betterminecraft_mc_1'
+alias mcrcon='sudo docker exec -i betterminecraft_mc_1 rcon-cli'
+
+# -------- End Minecraft Docker --------
+
+
+# -------- Minecraft Docker - betterminecraft --------
+alias mcup="sudo docker-compose -f /home/tim/code/minecraft_configs/compose-betterminecraft.yml up -d"
+alias mcdown="sudo docker-compose -f /home/tim/code/minecraft_configs/minecraft_configs/betterminecraft/compose-betterminecraft.yml down"
+alias mclogs='sudo docker logs --follow betterminecraft_mc_1'
+alias mcrcon='sudo docker exec -i betterminecraft_mc_1 rcon-cli'
+# -------- End Minecraft Docker --------
+

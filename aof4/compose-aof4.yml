@@ -1,0 +1,26 @@
+version: "3.7"
+
+services:
+  mc:
+    image: itzg/minecraft-server:2021.2.0-multiarch
+    restart: always
+    ports:
+    # expose the Minecraft server port outside of container
+    - 25565:25565
+    environment:
+      # REQUIRED for all types
+      EULA: "TRUE"
+      # Set server type (vs the default of vanilla)
+      TYPE: "CURSEFORGE"
+      CF_SERVER_MOD: "/modpacks/AllofFabric4Server-0.0.9.zip"
+      MAX_MEMORY: "4G"
+      MAX_BUILD_HEIGHT: "300"
+      VIEW_DISTANCE: "6"
+      LEVEL_TYPE: "LARGEBIOMES"
+      MAX_PLAYERS: "15"
+      CONSOLE: "false"
+      DIFFICULTY: "hard"
+      VERSION: "1.17.1"
+    volumes:
+    - /var/mc-aof4:/data
+    - /var/modpacks:/modpacks:ro
